@@ -191,7 +191,7 @@ var colocarImg = document.getElementById("foto");
 var puntaje = document.getElementById("puntaje");
 var mensaje = document.getElementById("mensaje");
 var intentos = 0;
-var pts = 5;
+var pts = 0;
 
 inputPais.onchange = function() {
 	var numPais = inputPais.value;
@@ -218,12 +218,12 @@ btnComprobar.onclick = function () {
 	adivinar = adivinar.toLowerCase();
 	adivinar = adivinar.trim();
 		if (adivinar == pais[i].nombre) {
-			puntaje.innerHTML = (pts);
 			console.log("es correcto");
 			mensaje.innerHTML = ("Exelente acertaste!");
-			mensaje.className = "bg-verde text-center mt-5";	
-			pts = pts;	
+			mensaje.className = "bg-verde text-center mt-5"	
+			pts = pts + 5;	
 			puntaje.className = "bg-verde text-center";
+			puntaje.innerHTML = (pts);
 			console.log(pais.length);
 			pais.splice(i,1);
 			console.log(pais.length);
