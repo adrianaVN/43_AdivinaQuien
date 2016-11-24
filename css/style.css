@@ -10,3 +10,23 @@ input{
 .select{
 	width: 70%;
 }
+.bg-verde{
+	background-color: rgba(63,191,127,0.6);
+	width: 60%;
+
+}
+.bg-rojo{
+	background-color: rgba(191,63,63,0.6);
+	width: 60%;
+
+
+}
+.img{
+	width: 80%;
+	height: 200px;
+}
+.msj{
+	background-color: #FF89DC;
+	width: 50%;
+	height: 60px;
+}

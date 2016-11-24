@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<title>adivina quien</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	</head>
-	<body>
-		<header>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="col-lg-2 mt-10">
-							<p>Elige tu sede:</p>
+<head>
+	<meta charset="UTF-8">
+	<title>adivina quien</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="col-lg-2 mt-10">
+						<p>Elige tu sede:</p>
+					</div>
+					<div class="col-lg-4 mt-10">
+						<div class="col-lg-12 text-left select">
+							<select class="form-control" id="pais">
+								<option value=”” disabled selected>Selecciona una opción</option>
+								<option value="0">México</option>
+								<option value="1">Lima</option>
+								<option value="2">Arequipa</option>
+								<option value="3">Santiago</option>
+							</select>
 						</div>
-						<div class="col-lg-4 mt-10">
-		                    	<div class="col-lg-12 text-left select">
-	                    		<select class="form-control" id="pais" onchange="pais();">
-	                        		<option value=”” disabled selected>Selecciona una opción</option>
-	                        		<option value="Lima">Lima</option>
-	                        		<option value="Colombia">Colombia</option>
-	                        		<option value="Mexico">México</option>
-	                        		<option value="Chile">Chile</option>
-	                    		</select>
-								</div>
-							</div>
-						<div class="col-lg-5 mt-10">
-							<p class="text-center">Puntos:</p>
-						</div>
-						<div class="col-lg-1 mt-10" id="puntos">
+					</div>
+					<div class="col-lg-6 mt-10">
+						<span class="text-center">Puntos:</span>
+						<div class="mt-10" id="puntaje">
 							
 						</div>
-			</div>
-		</header>
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 mt-5">
-						<div class="col-lg-5" >
-							<div id="fotos">
-								
-							</div>
-						</div>
-						<div class="col-lg-7">
-							<p>Ingresa su nombre:</p>
-							<div class="row">
-								<div class="col-lg-12">
-									<input type="text" name="" id="name">
+					</div>
+
+				</div>
+			</header>
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 mt-5">
+							<div class="col-lg-5" >
+								<div id="foto">
+									<img src="images/24809755-Abstract-Vector-Question-Mark-Colorful-Symbol-made-from-Splashes-Blots-Stains-Stock-Vector.jpg" alt="" class="img-responsive">
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-lg-12 mt-5">
-									 <button class="btn btn-primary" onclick="nombre()">Comprobar</button>
-                        			<p class="mensaje"></p>
+							<div class="col-lg-7">
+								<p>Ingresa su nombre:</p>
+								<div class="row">
+									<div class="col-lg-12">
+										<input type="text" name="" id="adivinar">
+										<button class="btn btn-primary mt-5" id="comprobar">Comprobar</button>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12 mt-5" id="mensaje">
+									<p style="display:none;" id="mensaje1">Exelente acertaste!</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
 
-	<script type="text/javascript" src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>
-	<script src="js/main.js"></script>
-	<script src="js/jquery-1.11.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>		
-	</body>
+			<script type="text/javascript" src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>
+			<script src="js/main.js"></script>
+			<script src="js/jquery-1.11.3.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>		
+		</body>
 </html><!--  -->
